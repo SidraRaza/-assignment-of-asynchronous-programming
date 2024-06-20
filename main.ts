@@ -13,10 +13,10 @@ squareAfterDelay(4).then((result) => (console.log(result)));
 // question#2
 // Write a TypeScript function that takes a string and returns its length after a delay of 1 second:
 
-function lengthAfterDelay(s: string): Promise<number> {
+function lengthAfterDelay(str: string): Promise<number> {
     return new Promise(resolve => {
         setTimeout(() => {
-            resolve(s.length);
+            resolve(str.length);
         }, 1000);
     });
 }
@@ -24,10 +24,10 @@ lengthAfterDelay("Sidra").then((result)=>(console.log(result)))
 // question#
 //  Write a TypeScript function that takes a boolean and returns its negation after a delay of 3 seconds:
 
-function negateAfterDelay(b: boolean): Promise<boolean> {
+function negateAfterDelay(boolean: boolean): Promise<boolean> {
     return new Promise(resolve => {
         setTimeout(() => {
-            resolve(!b);
+            resolve(!boolean);
         }, 3000);
     });
 }
